@@ -1,0 +1,56 @@
+// body {
+//     background-color: blue;
+// }
+
+// .main {
+//     background-color: lightblue;
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     .main-paragraph {
+//         font-size: 1.4em;
+//     }
+// }
+
+// .main, footer {
+//     h1, p {
+//         letter-spacing: 1px;
+//     }
+// }
+
+// &
+// Parent Selector
+// .main {
+//     .container & {
+//         background-color: lightblue;
+//     }
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     // Digunakan untuk pseudo class
+//     &:hover {
+//         background-color: salmon;
+//     }
+// }
+
+// menampilkan nama parentnya
+.main {
+    & &-heading {
+        font-size: 2em;
+    }
+    #{&}-paragraph {
+        font-size: 1.4em;
+    }
+}
+
+.footer {
+    & &-heading {
+        font-size: 2em;
+    }
+    & &-footer {
+        font-size: 1.3em;
+    }
+}
